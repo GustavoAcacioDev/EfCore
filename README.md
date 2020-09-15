@@ -1,3 +1,3 @@
 # EfCore
 
-Projeto onde aprendo Sobre EntityFraeworkCore
+Projeto onde aprendo Sobre EntityFrameworkCore
