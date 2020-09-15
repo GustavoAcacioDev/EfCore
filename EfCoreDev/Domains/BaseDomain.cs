@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace EfCoreDev.Domains
 {
-    public class Pedido : BaseDomain
+    public abstract class BaseDomain
     {
-        
-        public string Status { get; set; }
-        public DateTime Orderdate { get; set; }
+        [Key]
+        public Guid Id { get; set; }
 
-       
+        public BaseDomain()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }
